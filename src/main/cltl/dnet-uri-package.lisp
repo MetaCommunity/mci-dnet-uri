@@ -4,7 +4,7 @@
 
 (defpackage #:info.metacommunity.cltl.dnet.uri
   (:nicknames #:dnet.uri)
-  (:use #:info.metacommunity.cltl.utils #:cl)
+  (:use #+NIL #:info.metacommunity.cltl.utils #:cl)
   (:export
    #:uri-table
    #:uri-hash-table
