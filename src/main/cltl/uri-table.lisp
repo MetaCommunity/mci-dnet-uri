@@ -78,6 +78,13 @@
            (values boolean))
   (remhash uri (uri-table-storage table)))
 
+
+(defun uri-equal (uri-1 uri-2)
+  (declare (type string uri-1 uri02)
+           (values boolean))
+  (= (sxhash uri-1) (sxhash uri-2)))
+
+
 #| Trivial instance tests
 
 
@@ -101,5 +108,13 @@
 
 (uri-get  "http://www.example.com/" *t*)
 ;; => NIL, NIL
+
+
+(uri-equal "http://www.example.com/" "http://www.example.com/")
+;; => T
+
+(uri-equal "http://www.example.com/" "http://WWW.example.com/")
+;; => NIL
+;; ^ conformant per XMLNS
 
 |#
