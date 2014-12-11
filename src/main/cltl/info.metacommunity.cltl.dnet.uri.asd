@@ -15,7 +15,7 @@
   :version "1.0"
   :homepage "https://github.com/MetaCommunity/mci-dnet-uri"
   :license "https://github.com/MetaCommunity/mci-dnet-uri/blob/master/LICENSE"
-  :depends-on (#:info.metacommunity.cltl.utils)
+  ;; :depends-on (#:info.metacommunity.cltl.utils)
   :components 
   ((:file "dnet-uri-package")
    (:file "uri-table"
