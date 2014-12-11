@@ -80,9 +80,10 @@
 
 
 (defun uri-equal (uri-1 uri-2)
-  (declare (type string uri-1 uri02)
+  (declare (type string uri-1 uri-2)
            (values boolean))
-  (= (sxhash uri-1) (sxhash uri-2)))
+  (= (sxhash (coerce uri-1 'simple-string))
+     (sxhash (coerce uri-2 'simple-string))))
 
 
 #| Trivial instance tests
