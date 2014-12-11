@@ -3,10 +3,10 @@
 (in-package #:cl-user)
 
 (eval-when (:compile-toplevel :load-toplevel :execute)
-  (defpackage #:utils-system
+  (defpackage #:dnet-system
     (:use #:asdf #:cl)))
 
-(in-package #:utils-system)
+(in-package #:dnet-system)
 
 
 (defsystem #:info.metacommunity.cltl.dnet.uri
